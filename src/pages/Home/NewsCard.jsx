@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
 
-const NewsCard = ({news}) => {
-    const { title, img,id, price, description } =news;
+const NewsCard = ({ news }) => {
+    const { title, img, id, price, short_desc } = news;
     return (
         <div className="card mb-16  bg-base-100 shadow-xl">
             <figure><img src={img} className="h-72" alt="Shoes" /></figure>
@@ -13,27 +13,27 @@ const NewsCard = ({news}) => {
                 {/* <div className="card-actions justify-end">
                     <button className="btn btn-primary">Show Details</button>
                 </div> */}
-            
 
 
-                    {
-                    description.length > 200 ? <p>{description.slice(0,200)} <Link 
+
+                {
+                    short_desc.length > 200 ? <p>{short_desc.slice(0, 200)} <Link
 
                         to={`/news/${id}`}
-                        
+
                         className="text-blue-600 font-bold">
                         Read More...</Link></p>
 
                         :
-                     
-                            // <p>{details}</p>
-                            <p>{description}</p>
-                            
-                            
 
-                    }
-                
-                
+                        // <p>{details}</p>
+                        <p>{short_desc}</p>
+
+
+
+                }
+
+
             </div>
         </div>
     );

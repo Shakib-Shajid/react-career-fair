@@ -4,6 +4,7 @@
       "title": "Engineering Job Event Management",
       "img": "https://i.ibb.co/r247Vky/271393635-472374154268981-2555375138722094986-n.jpg",
       "price": "$199.99",
+      "short_desc":"Explore exciting engineering career opportunities and connect with top companies at our comprehensive event.",
       "description": "Join our Engineering Job Event Management program and explore exciting career opportunities in the field of engineering. This comprehensive event is designed to connect talented engineers with top-notch companies looking to hire fresh talent. With a diverse range of companies and job openings, you'll have the chance to network, interview, and secure your dream job.\n\nOur event offers a unique platform for recent graduates and experienced engineers alike. Whether you're a mechanical, electrical, software, or civil engineer, there are opportunities waiting for you. Don't miss out on this chance to take your career to new heights. Register now and jumpstart your engineering career!"
     },
     {
@@ -11,6 +12,7 @@
       "title": "Medical Job Event Management",
       "img": "https://i.ibb.co/r7XdF52/270849461-474657244184177-5567855247415496950-n.jpg",
       "price": "$179.99",
+      "short_desc": "Discover healthcare job prospects and connect with leading institutions at our medical career event.",
       "description": "Are you passionate about a career in the medical field? Join our Medical Job Event Management program to discover exciting job opportunities in healthcare. This event is your gateway to connecting with leading healthcare institutions, clinics, and hospitals actively seeking talented professionals.\n\nWith a wide range of medical specialties and positions available, this event caters to medical graduates, experienced practitioners, and healthcare administrators. Whether you're a doctor, nurse, pharmacist, or healthcare manager, you'll find the perfect job match at our event. Register today and take the next step in your medical career!"
     },
     {
@@ -18,6 +20,7 @@
       "title": "Master's Job Event Management",
       "img": "https://i.ibb.co/hmWMGsP/329419267-1388371261975156-180169638039183172-n.jpg",
       "price": "$249.99",
+      "short_desc": "Kickstart your professional journey by connecting with renowned companies across various industries.",
       "description": "Pursuing a Master's degree and wondering about your career prospects? Look no further than our Master's Job Event Management program. This event is tailored to help master's degree holders kickstart their professional journey by connecting them with renowned companies across various industries.\n\nWhether you specialize in business administration, computer science, psychology, or any other field, this event has opportunities waiting for you. Network with industry leaders, attend workshops, and secure interviews that can lead to your dream job. Don't miss this chance to leverage your education for a successful career. Register now!"
     },
     {
@@ -25,6 +28,7 @@
       "title": "Undergraduate Job Event Management",
       "img": "https://i.ibb.co/x63y1XJ/mg-0136-resized-for-web-16-by-9-1.jpg",
       "price": "$149.99",
+      "short_desc":"Gain insights into your future profession and meet a wide range of companies seeking young talent.",
       "description": "Starting your career journey as an undergraduate? Our Undergraduate Job Event Management program is the perfect opportunity to explore job prospects and gain insights into your future profession. We've partnered with a wide range of companies looking to hire bright, young talent.\n\nNo matter your major, whether it's business, engineering, arts, or science, this event has something for everyone. Attend seminars, meet industry professionals, and secure interviews that can pave the way for a promising career. Seize this chance to make the most of your undergraduate years. Register today!"
     },
     {
@@ -32,6 +36,7 @@
       "title": "Internship Job Event Management",
       "img": "https://i.ibb.co/6D0HXpW/387459027-1048790183135840-1576021844340850061-n.jpg",
       "price": "$129.99",
+      "short_desc":"Launch your career with valuable internships and gain practical experience in your field of interest.",
       "description": "Kickstart your career with valuable internships! Our Internship Job Event Management program connects ambitious students and recent graduates with companies offering internship opportunities. Gain practical experience, build your skills, and create a strong foundation for your future career.\n\nWhether you're interested in marketing, finance, technology, or any other field, our event offers a variety of internships to suit your interests. Attend networking sessions, meet industry leaders, and secure interviews that can lead to your dream internship. Don't miss out on this chance to launch your career. Register now!"
     },
     {
@@ -39,6 +44,7 @@
       "title": "Sales & Marketing Job Event Management",
       "img": "https://i.ibb.co/SPYqckZ/346120885-1192274451481464-7234077468966586734-n.jpg",
       "price": "$189.99",
+      "short_desc":"Connect with dynamic professionals and explore rewarding sales and marketing job opportunities.",
       "description": "Are you a sales or marketing enthusiast looking for the perfect job opportunity? Join our Sales & Marketing Job Event Management program to connect with leading companies seeking dynamic professionals in these fields. This event is your gateway to a rewarding career in sales and marketing.\n\nExplore a wide range of job openings, from sales representatives to digital marketing managers. Network with industry experts, attend workshops, and secure interviews with top employers. Transform your passion into a successful career. Register today and unlock your potential!"
     },
     {
@@ -46,6 +52,7 @@
       "title": "HR Admin Job Event Management",
       "img": "https://i.ibb.co/DCzzSV4/141-hr-and-admin-officer-20200115112353167.png",
       "price": "$169.99",
+      "short_desc": "Connect HR professionals and aspiring specialists with organizations seeking their expertise.",
       "description": "If you have a knack for HR and administration, don't miss our HR Admin Job Event Management program. This event is designed to connect HR professionals, administrators, and aspiring HR specialists with organizations seeking their expertise.\n\nDiscover a variety of HR and administrative roles, from HR managers to office administrators. Network with HR professionals, attend informative sessions, and secure interviews with prospective employers. Take the next step in your HR and admin career. Register now!"
     },
     {
@@ -53,6 +60,7 @@
       "title": "Diploma Job Event Management",
       "img": "https://i.ibb.co/r247Vky/271393635-472374154268981-2555375138722094986-n.jpg",
       "price": "$139.99",
+      "short_desc":"Begin your career journey in various industries with job opportunities tailored to diploma holders.",
       "description": "Diploma holders, your path to a rewarding career begins here! Our Diploma Job Event Management program is tailored to help you explore job opportunities in various industries. Connect with companies looking for skilled and dedicated professionals with a diploma qualification.\n\nWhether you're trained in engineering, hospitality, graphic design, or another field, this event offers job openings suited to your skills. Network with industry insiders, attend workshops, and secure interviews that can lead to your dream job. Start your career journey on the right foot. Register today!"
     },
     {
@@ -60,6 +68,7 @@
       "title": "Volunteer Job Event Management",
       "img": "https://i.ibb.co/yp9txLX/volunteerfair.jpg",
       "price": "$140.39",
+      "short_desc":"Make a positive impact on your community by discovering volunteer opportunities with non-profit organizations.",
       "description": "Looking to give back to your community? Join our Volunteer Job Event Management program and discover volunteer opportunities with non-profit organizations, charities, and community projects. Make a positive impact while gaining valuable experience.\n\nWhether you're passionate about education, healthcare, environmental conservation, or any other cause, this event offers volunteer roles that align with your interests. Connect with like-minded individuals, attend informational sessions, and find volunteer opportunities that resonate with you. Register today and start making a difference!"
     }
   ]

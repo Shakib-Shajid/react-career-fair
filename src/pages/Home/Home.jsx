@@ -1,27 +1,20 @@
 import { useLoaderData } from "react-router-dom";
-import Header from "../Shared/Header/Header";
-import LeftSideNav from "../Shared/LeftSideNav/LeftSideNav";
 import Navbar from "../Shared/Navbar/Navbar";
-import RightSideNav from "../Shared/RightSideNav/RightSideNav";
-import BreakingNews from "./BreakingNews";
 import NewsCard from "./NewsCard";
 import Footer from "../Footer/Footer";
 
 
 
 const Home = () => {
-// load the data of news
-const news = useLoaderData();
-// console.log(news)
+    // load the data of news
+    const news = useLoaderData();
+    // console.log(news)
 
     return (
         <div>
-            {/* <Header>
-            </Header>
-            <BreakingNews></BreakingNews> */}
+
 
             <Navbar></Navbar>
-            {/* <h2 className="text-3xl font-poppins font-bold">this is home page</h2> */}
             <div className="mt-10">
                 <div className="hero w-full min-h-[300px] md:min-h-[600px] " style={{ backgroundImage: 'url("austin-distel-wD1LRb9OeEo-unsplash.jpg")' }}>
                     <div className="hero-overlay bg-opacity-60"></div>
@@ -36,32 +29,32 @@ const news = useLoaderData();
             </div>
 
             <div className="mt-10">
-                {/* <div className=""> 
-                    <LeftSideNav></LeftSideNav>
-                </div> */}
+
                 {/* news container */}
-                <div className="md:col-span-2 grid lg:grid-cols-3 gap-5"> 
+                <div className="md:col-span-2 grid lg:grid-cols-3 gap-5">
                     {/* <h2 className="text-4xl">News coming soon</h2> */}
 
                     {
 
                         news.map(aNews => <NewsCard key={aNews.id}
-                        news={aNews}
-                        
-                        
- 
+                            news={aNews}
+
+
+
                         ></NewsCard>)
                     }
-                    
-                </div>
-                {/* <div className="">
-                <RightSideNav></RightSideNav>
 
-                </div> */}
+                </div>
+
             </div>
+            <section className="space-y-2">
+                <h2 className="text-3xl">About Us</h2>
+                <p className="mb-3">A Career Fair is an event management agency specializing in organizing and hosting career-related events. These events typically bring together employers and job seekers, creating a platform for networking, job opportunities, and professional development. Career Fairs may work with educational institutions, companies, and jobseekers to facilitate connections, offer workshops, and provide a space for recruitment efforts. Their goal is to bridge the gap between job providers and job seekers, helping individuals explore career opportunities and make meaningful connections within their chosen industries.</p>
+                <p>Our mission at Career Fair is to connect talent with opportunity. We strive to create meaningful platforms and events that empower individuals to explore their career potential, discover new possibilities, and connect with employers and industry experts. We are dedicated to facilitating networking, professional development, and educational opportunities that not only benefit job seekers but also contribute to the growth and success of organizations and industries. Our mission is to bridge the gap between talent and demand, fostering a dynamic and thriving workforce for the future.</p>
+            </section>
             <Footer></Footer>
         </div>
-        
+
     );
 };
 
