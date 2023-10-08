@@ -2,15 +2,24 @@ import { NavLink, Link } from "react-router-dom"
 import userDefaultpic from "../../../assets/user.png"
 import { useContext } from "react";
 import { AuthContext } from "../../../Provider/AuthProvider"
+import { signOut, getAuth } from "firebase/auth";
+import app from '../../../firebase/firebase.config'
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
 
 
     const handleSignOut = () => {
+        const auth = getAuth(app);
         logOut()
             .then()
             .catch()
+
+        signOut(auth)
+            .then()
+            .catch()
+
     }
+
 
     const navLinks = <>
         <li><NavLink to="/">Home</NavLink></li>

@@ -13,29 +13,19 @@ const NewsCard = ({ news }) => {
                 {/* <div className="card-actions justify-end">
                     <button className="btn btn-primary">Show Details</button>
                 </div> */}
+                <p>{short_desc}</p>
+
 
 
 
                 {
-                    short_desc.length > 200 ? <p>{short_desc.slice(0, 200)} <Link
-
-                        to={`/news/${id}`}
-
-                        className="text-blue-600 font-bold">
-                        Read More...</Link></p>
-
-                        :
-
-                        // <p>{details}</p>
-                        <p>{short_desc}</p>
-
-
-
+                    <Link to={`/news/${id}`} className="text-blue-600 font-bold">
+                        <button className="btn btn-success text-white w-full">Show Details</button></Link>
                 }
 
 
             </div>
-        </div>
+        </div >
     );
 };
 
