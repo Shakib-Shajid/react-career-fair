@@ -6,6 +6,8 @@ import Register from "../pages/Register/Register";
 import PrivateRoute from "./PrivateRoute";
 import Galary from "../pages/Galary/Galary";
 import Details from "../pages/Details/Details";
+import NotFound from "../pages/NotFound/NotFound";
+import Contact from "../pages/Contact/Contact";
 
 const router = createBrowserRouter([
 
@@ -32,6 +34,10 @@ const router = createBrowserRouter([
                 path: '/gallery',
                 element: <PrivateRoute><Galary></Galary></PrivateRoute>
             },
+            {
+                path: '/contact',
+                element: <PrivateRoute><Contact></Contact></PrivateRoute>
+            },
 
             {
 
@@ -42,6 +48,10 @@ const router = createBrowserRouter([
 
                 path: '/register',
                 element: <Register></Register>
+            },
+            {
+                path: '*',
+                element: <NotFound></NotFound>
             }
         ]
 

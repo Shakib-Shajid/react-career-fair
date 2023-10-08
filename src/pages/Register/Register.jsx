@@ -36,7 +36,7 @@ const Register = () => {
         setloginError('');
 
         if (password.length < 6) {
-            setloginError('please should 6 charaecter in password');
+            setloginError('please should 6 character in password');
             return;
         }
         else if (!/[A-Z]/.test(password)) {
