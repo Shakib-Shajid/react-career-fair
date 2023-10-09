@@ -5,7 +5,7 @@ import Navbar from "../Shared/Navbar/Navbar";
 const Contact = () => {
     return (
         <div>
-            <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+            <div data-aos="fade-right" className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
                 <div
                     className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
                     aria-hidden="true"
@@ -19,9 +19,9 @@ const Contact = () => {
                     />
                 </div>
                 <div className="mx-auto max-w-2xl text-center">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact sales</h2>
+                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Booking</h2>
                     <p className="mt-2 text-lg leading-8 text-gray-600">
-                        Aute magna irure deserunt veniam aliqua magna enim voluptate.
+                        Please Fill Up the form for booking.
                     </p>
                 </div>
                 <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">

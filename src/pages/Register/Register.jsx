@@ -74,7 +74,7 @@ const Register = () => {
 
 
     return (
-        <div>
+        <div data-aos="zoom-in">
             <Navbar></Navbar>
             <div>
                 <h2 className="text-3xl my-10 text-center">Please Register</h2>
