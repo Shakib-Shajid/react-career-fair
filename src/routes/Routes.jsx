@@ -22,14 +22,12 @@ const router = createBrowserRouter([
                 element: <Home></Home>,
                 loader: () => fetch('/career-fairs.json')
             },
-
             {
                 path: '/news/:id',
                 element: <PrivateRoute><Details></Details></PrivateRoute>,
-                loader: () => fetch('career-fairs.json')
+                loader: () => fetch('/career-fairs.json')
 
             },
-
             {
                 path: '/gallery',
                 element: <PrivateRoute><Galary></Galary></PrivateRoute>

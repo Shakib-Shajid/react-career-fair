@@ -15,17 +15,15 @@ const Login = () => {
 
     //react tostify
 
-    const handleApplyJob = () => {
-
-
-        toast('You have Login successfully')
+    const handleApplyJob = (e) => {
+        toast(e);
     }
 
     //
     ///google
     const [user, setUser] = useState(null);
     const auth = getAuth(app);
-    const provider = new GoogleAuthProvider();
+    const provider = new GoogleAuthProvider('');
 
     const handleGoogleSignIn = () => {
         // console.log('google mama is coming')
@@ -33,9 +31,8 @@ const Login = () => {
 
             .then(result => {
                 const loggedInUser = result.user;
-                console.log(loggedInUser);
+                // console.log(loggedInUser);
                 setUser(loggedInUser);
-
                 //navigate after login
                 navigate(location?.state ? location.state : '/')
             })
@@ -43,12 +40,10 @@ const Login = () => {
 
             .catch(error => {
                 // console.log('error' , error.message)
-                setloginError(error.message)
+                handleApplyJob(error.message);
+
+
             })
-
-
-
-
 
     }
 
@@ -65,15 +60,13 @@ const Login = () => {
             })
     }
 
-
-
     ///
 
     const { signIn } = useContext(AuthContext);
 
     const location = useLocation();
     const navigate = useNavigate();
-    console.log("location the login page", location)
+    // console.log("location the login page", location)
 
 
     const handleLogin = e => {
@@ -91,41 +84,37 @@ const Login = () => {
 
         //validation korbo
         if (password.length < 6) {
-            setloginError('please should 6 charaecter');
+            handleApplyJob('please should 6 charaecter')
             return;
         }
         else if (!/[A-Z]/.test(password)) {
-            setloginError('Your password should have one upper at least chareacters')
+            handleApplyJob('Your password should have one upper at least chareacters');
             return;
-
         }
 
         ////
 
         signIn(email, password)
+
             .then(result => {
+
                 console.log(result.user);
-
-
-
-
+                toast.success("Logged in successfully!");
                 //navigate after login
-                navigate(location?.state ? location.state : '/')
-
-
-
+                setTimeout(() => {
+                    navigate(location?.state ? location.state : '/');
+                }, 1000);
+                // navigate(location?.state ? location.state : '/')
 
             })
             .catch(error => {
                 console.log(error)
+                if (error) {
+                    handleApplyJob(error.message)
+                }
             })
 
     }
-
-
-
-
-
 
     return (
         <div>
@@ -152,7 +141,7 @@ const Login = () => {
                         </label>
                     </div>
                     <div className="form-control mt-6">
-                        <button onClick={handleApplyJob} className="btn btn-primary">Login</button>
+                        <button className="btn btn-primary">Login</button>
                     </div>
                 </form>
 
@@ -184,7 +173,7 @@ const Login = () => {
 
             {
 
-                loginError && <p className="text-red-500">{loginError}</p>
+                loginError && <p className="text-red-500 text-center my-3">{loginError}</p>
             }
 
 

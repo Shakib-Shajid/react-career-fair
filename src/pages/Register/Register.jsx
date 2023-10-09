@@ -7,13 +7,14 @@ import { useState } from "react";
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { updateProfile } from "firebase/auth";
 
 const Register = () => {
     //react tostify
 
     const handleApplyJob = () => {
 
-        toast('You have Register sucessfully')
+        toast('You have Register successfully')
     }
 
     //
@@ -49,11 +50,24 @@ const Register = () => {
         createUser(email, password)
             .then(result => {
                 console.log(result.user)
+                updateProfile(result.user, {
+                    displayName: name,
+                    photoURL: photo
+                })
+                    .then(res => {
+                        console.log(res);
+                        window.location.reload();
+                    })
+                    .catch(error => {
+                        console.log(error.message);
+                    })
             })
             .catch(error => {
                 setloginError(error.message)
                 console.error(error)
             })
+
+
 
     }
 
