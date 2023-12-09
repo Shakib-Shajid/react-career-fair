@@ -11,7 +11,6 @@ const PrivateRoute = ({ children }) => {
         return <span className="loading loading-spinner text-error"></span>
     }
 
-
     if (user) {  //jodi user thakhey tokhon takey jaitey diby
         return children;
     }
