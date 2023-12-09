@@ -13,3 +13,10 @@ Live Link: https://react-career-fair.web.app/
 # About this project
 
 This is an event management agency. They manage career fair events. In this website people can visit and see all the events of us. People need to login and see details here.
+
+# Technology
+
+1. React
+2. Firebase
+3. Tailwind css
+4. Daisy UI
